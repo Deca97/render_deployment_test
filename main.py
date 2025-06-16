@@ -23,6 +23,6 @@ def root():
 @app.post("/predict")
 def predict(data: InputData):
     # Prepara i dati per la predizione
-    X = np.array([[data.feature1, data.feature2, data.feature3]])
+    X = np.array([[data.feature1, data.feature2, data.feature3, , data.feature4]])
     prediction = model.predict(X)
     return {"prediction": int(prediction[0])}
