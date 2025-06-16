@@ -6,7 +6,7 @@ import numpy as np
 app = FastAPI()
 
 # Caricamento modello all'avvio
-model = joblib.load("model.pkl")
+model = joblib.load("model.joblib")
 
 # Definizione struttura dati input
 class InputData(BaseModel):
